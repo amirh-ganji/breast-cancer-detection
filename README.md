@@ -1,62 +1,43 @@
-# 🔢 Handwritten Digit Recognition — Classifier Comparison
+# 🩺 Breast Cancer Detection
 
-A machine learning project that benchmarks four classification algorithms on the **Optical Recognition of Handwritten Digits** dataset (sklearn built-in).
+A machine learning project (Jupyter notebook) for [describe the task, e.g. classifying breast tumors as benign or malignant].
 
-## 📌 Overview
-
-The goal is to compare the performance of multiple classifiers on an 8×8 pixel grayscale image classification task with 10 classes (digits 0–9).
-
-## 📊 Models Compared
-
-| Model | Notes |
-|-------|-------|
-| Random Forest | `max_depth=128`, `n_estimators=256` |
-| SVM | Default RBF kernel |
-| ANN (MLP) | `hidden_layer_sizes=256` |
-| KNN | `n_neighbors=8` |
+> ⚠️ Educational project only. This is not a medical tool and must not be used for clinical decisions.
 
 ## 🗂️ Dataset
 
-- **Source:** `sklearn.datasets.load_digits`
-- **Samples:** 1,797 images
-- **Features:** 64 (8×8 pixel values, flattened)
-- **Classes:** 10 (digits 0–9)
-- **Train/Test split:** 70% / 30%
-- **Preprocessing:** MinMax normalization to [0, 1]
+- **Source:** [dataset name / where it comes from]
+- **Task:** [binary classification / other]
 
-## 📈 Evaluation Metrics
+## 🤖 Models
 
-Each model is evaluated on:
-- Training & Test **Accuracy**
-- **Precision** (weighted)
-- **Recall** (weighted)
+[List the models you trained, e.g. Logistic Regression, SVM, Random Forest]
 
 ## 🚀 How to Run
 
 1. Clone the repo and open the notebook:
-   ```bash
-   git clone https://github.com/YOUR_USERNAME/handwritten-digit-recognition.git
-   cd handwritten-digit-recognition
-   jupyter notebook computer_vision.ipynb
-   ```
+
+```
+git clone https://github.com/amirh-ganji/breast-cancer-detection.git
+cd breast-cancer-detection
+jupyter notebook breast_cancer_detection.ipynb
+```
 
 2. Install dependencies:
-   ```bash
-   pip install scikit-learn matplotlib jupyter
-   ```
+
+```
+pip install [libraries imported at the top of the notebook] jupyter
+```
 
 3. Run all cells top to bottom.
-
-## 🛠️ Tech Stack
-
-- Python 3.x
-- scikit-learn
-- matplotlib
-- Jupyter Notebook
 
 ## 📁 Structure
 
 ```
-├── computer_vision.ipynb   # Main notebook
+├── breast_cancer_detection.ipynb   # Main notebook
 └── README.md
 ```
+
+## 📄 License
+
+MIT — see the [LICENSE](LICENSE) file.
